@@ -30,7 +30,37 @@ class ProfilePage extends StatelessWidget {
               child: Icon(Icons.person, size: 50, color: Colors.white),
             ),
             Center(
-              child: Column(
+              child: ProfileInfo(
+                userName: userName,
+                role: role,
+                experiences: experiences,
+              ),
+            ),
+          
+            const SizedBox(width: 16),
+
+            ]
+          ),
+        ),
+      );
+  }
+}
+
+class ProfileInfo extends StatelessWidget {
+  const ProfileInfo({
+    super.key,
+    required this.userName,
+    required this.role,
+    required this.experiences,
+  });
+
+  final String userName;
+  final String role;
+  final List<String> experiences;
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
                 children: [
                   Text(
                     userName,
@@ -49,14 +79,6 @@ class ProfilePage extends StatelessWidget {
                     textAlign: TextAlign.center,
                   ),
                 ],
-              ),
-            ),
-          
-            const SizedBox(width: 16),
-
-            ]
-          ),
-        ),
-      );
+              );
   }
 }
