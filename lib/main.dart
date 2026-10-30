@@ -71,7 +71,7 @@ class MainApp extends StatelessWidget {
                 icon: const Icon(Icons.edit),
                 label: const Text('Edit Profil'),
               ),
-              const SizedBox(height: 24),
+              const SizedBox(width: 24),
               
               Container(
                 padding: const EdgeInsets.symmetric(vertical: 12),
@@ -89,11 +89,11 @@ class MainApp extends StatelessWidget {
                     const StatItem(count: '1.2K', label: 'Followers'),
                     const SizedBox(width: 24), 
                     
-                    StatItem(count: 42, label: 'Following'),
+                    StatItem(count: '42', label: 'Following'),
                   ],
                 ),
               ),
-              const SizedBox(height: 24),
+              const SizedBox(width: 24),
               
               const Align(
                 alignment: Alignment.centerLeft,
